@@ -1,4 +1,4 @@
-# Jasypt Encryption/Decryption API
+# Symmetric Encryption/Decryption API
 
 This is a Spring Boot application that provides a REST API for encrypting and decrypting text using the Jasypt library.
 
