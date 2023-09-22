@@ -21,15 +21,27 @@ This is a Spring Boot application that provides a REST API for encrypting and de
 
 ## Installation
 
-1. Clone the repository:  https://github.com/mohammed-lahbil/symmetric-encryption-back.git
-2. Navigate to the project directory:  `symmetric-encryption-back`
+1. Clone the repository:  
+    ```sh
+    git clone https://github.com/mohammed-lahbil/symmetric-encryption-back.git
+    ```
+2. Navigate to the project directory: 
+    ```sh
+    cd symmetric-encryption-back
+    ```
 
 # Usage
 
 ## Running the application
 
-1. Build the application using Maven:  **mvn clean install**
-2. Run the application using Maven: **mvn spring-boot:run**
+1. Build the application using Maven:
+    ```sh
+    mvn clean install
+    ```
+2. Run the application using Maven:
+    ```sh
+    mvn spring-boot-run
+    ```
 
 
 The application will run on port 8000. You can access the API using the following endpoints:
