@@ -8,6 +8,7 @@ This is a Spring Boot application that provides a REST API for encrypting and de
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 - [Usage](#usage)
+    - [Diagram](#diagram)
     - [Running the application](#running-the-application)
     - [API Usage](#api-usage)
       - [Example](#example)
@@ -31,6 +32,9 @@ This is a Spring Boot application that provides a REST API for encrypting and de
     ```
 
 # Usage
+
+## Diagram
+![Example image](./src/main/resources/static/diagram.png)
 
 ## Running the application
 
@@ -57,13 +61,13 @@ The application will run on port 8000. You can access the API using the followin
 The Encryption endpoint accepts JSON payloads with the following properties:
 
 - `decryptedText`: The text value to encrypt or decrypt
-- `passPhrase`: The passphrase for symmetric encryption/decryption
+- `passPhrase`: The passphrase for symmetric encryption/decryption (default: Basic)
 - `algorithm`: The algorithm to use for encryption/decryption
 
 The Decryption endpoint accepts JSON payloads with the following properties:
 
 - `encryptedText`: The text value to encrypt or decrypt
-- `passPhrase`: The passphrase for symmetric encryption/decryption
+- `passPhrase`: The passphrase for symmetric encryption/decryption (default: Basic)
 - `algorithm`: The algorithm to use for encryption/decryption
 
 ### Example
@@ -72,8 +76,16 @@ POST request to `http://localhost:8080/api/encrypt` with the following JSON payl
 
 ```json  
 {  
-"decryptedText": "hello world",  
-"passPhrase": "mysecretkey",  
-"algorithm": "PBEWithMD5AndDES",  
-}  
+    "decryptedText": "hello world",  
+    "passPhrase": "mysecretkey",  
+    "algorithm": "Basic"
+}
+```
+Result 
+```json
+{
+    "encryptedText": "0MmCnN/jNMvzGCQQDRecvhx751KzWC/D",
+    "passPhrase": "mysecretkey",
+    "algorithm": "Basic"
+}
 ```
