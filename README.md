@@ -61,14 +61,14 @@ The application will run on port 8000. You can access the API using the followin
 The Encryption endpoint accepts JSON payloads with the following properties:
 
 - `decryptedText`: The text value to encrypt or decrypt
-- `passPhrase`: The passphrase for symmetric encryption/decryption (default: Basic)
-- `algorithm`: The algorithm to use for encryption/decryption
+- `passPhrase`: The passphrase for symmetric encryption/decryption
+- `algorithm`: The algorithm to use for encryption/decryption (default: Basic)
 
 The Decryption endpoint accepts JSON payloads with the following properties:
 
 - `encryptedText`: The text value to encrypt or decrypt
-- `passPhrase`: The passphrase for symmetric encryption/decryption (default: Basic)
-- `algorithm`: The algorithm to use for encryption/decryption
+- `passPhrase`: The passphrase for symmetric encryption/decryption
+- `algorithm`: The algorithm to use for encryption/decryption (default: Basic)
 
 ### Example
 
