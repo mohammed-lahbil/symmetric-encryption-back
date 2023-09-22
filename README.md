@@ -42,7 +42,10 @@ This is a Spring Boot application that provides a REST API for encrypting and de
     ```sh
     mvn spring-boot-run
     ```
-
+3. Run unit tests (Optional)
+    ```sh
+    mvn test
+    ```
 
 The application will run on port 8000. You can access the API using the following endpoints:
 
