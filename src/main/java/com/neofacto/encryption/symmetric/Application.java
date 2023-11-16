@@ -18,7 +18,7 @@ public class Application {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:4200");
+				registry.addMapping("/**").allowedOrigins("http://localhost:4200", "https://symmetric-encryption-front.vercel.app", "https://symmetric-encryption-front.vercel.app/");
 			}
 		};
 	}
